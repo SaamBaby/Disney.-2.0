@@ -33,7 +33,7 @@ export default function Home({
           after:bg-center after:bg-cover after bg-no-repeat 
           after:bg-fixed after:absolute after:inset-0 after:z-[-1]"
         >
-          <Slider />
+          <Slider results={popularMovies} />
           <Category />
           <MoviesCollection results={popularMovies} title="PopularMovies" />
           <ShowsCollection results={popularShows} title="PopularShows" />
