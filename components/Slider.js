@@ -6,7 +6,7 @@ function Slider({ results }) {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
   return (
     // make sure u enable loading lazy in
-    <section className="relative mt-7 shadow-2xl   max-w-screen-2xl">
+    <section className="relative mt-7 shadow-2xl   max-w-screen-3xl">
       <Carousel
         autoPlay
         infiniteLoop
@@ -30,7 +30,7 @@ function Slider({ results }) {
         </div> */}
         {results.map((result) => (
           <section className="relative min-h-[calc(75vh-65px)]">
-            <div class="bg-blend-lighten md:bg-blend-darken flex"> 
+            <div class="bg-blend-lighten md:bg-blend-darken flex">
               <Image
                 key={result.id}
                 src={
